@@ -1,0 +1,8 @@
+{{/*
+    addr    - The email address
+    content - Text for the link. If not provided, the email address will be used.
+*/}}
+{{- $b64 := (.Get "addr") | base64Encode | base64Encode }}
+{{- $text := .Get "content" -}}
+
+<obfu-matic stuff="{{ $b64 }}" say="{{ $text }}">[use Javascript to unredact email address]</obfu-matic>

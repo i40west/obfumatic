@@ -1,0 +1,4 @@
+.vscode/
+.nova/
+.DS_Store
+*.swp

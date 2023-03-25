@@ -1,0 +1,11 @@
+{
+  "name": "obfumatic",
+  "version": "1.0.0",
+  "description": "Email address obfuscation in a Web Component",
+  "keywords": ["web-component", "obfuscation", "email", "email-obfuscator"],
+  "author": "Jeremy Nixon",
+  "license": "BSD-2-Clause",
+  "repository": "i40west/obfumatic",
+  "homepage": "https://github.com/i40west/obfumatic",
+  "browser": "obfumatic.js"
+}

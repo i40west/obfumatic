@@ -30,8 +30,8 @@ class ObfuMatic extends HTMLElement {
               }
               a:hover {
                 color: var(--link-hover-color, inherit);
-                text-decoration: var(--link-hover-text-decoration, underline);
-                text-decoration-color: var(--link-underline-hover-color, initial);
+                text-decoration: var(--link-hover-text-decoration, var(--link-text-decoration, underline));
+                text-decoration-color: var(--link-underline-hover-color, var(--link-underline-color, initial));
               }
               a::selection {
                 color: var(--selection-a-color, inherit);

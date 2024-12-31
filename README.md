@@ -6,6 +6,13 @@ learn. So I made this.
 
 ## Usage 🚧
 
+I assume I'm the only one using this, so it's not on npm or anything.
+You can install it straight from this repository:
+
+```bash
+npm install github:i40west/obfumatic
+```
+
 Put `obfumatic.js` on your site, load it normally.
 
 ```html
@@ -97,12 +104,3 @@ obfu-matic::part(link):hover {
 ```
 
 If you do both of these things, the `part` rules will win.
-
-## So 😎
-
-I assume I'm the only one using this, so it's not on npm or anything.
-You can install it straight from this repository:
-
-```bash
-npm install github:i40west/obfumatic
-```

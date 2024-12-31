@@ -1,0 +1,10 @@
+---
+const { email, text } = Astro.props;
+const obfuEmail = btoa(btoa(email));
+---
+<obfu-matic stuff={obfuEmail} say={text}></obfu-matic>
+
+<script>
+	import 'obfumatic';
+</script>
+

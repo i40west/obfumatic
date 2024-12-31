@@ -12,7 +12,11 @@ Put `obfumatic.js` on your site, load it normally.
 <script type="module" src="/js/obfumatic.js"></script>
 ```
 
-Or bundle it with whatever build tool you're using.
+It can be bundled.
+
+```js
+import 'obfumatic';
+```
 
 Then, in your HTML:
 
@@ -31,8 +35,21 @@ To encode the address, you can, for example, run the node repl and do:
 btoa(btoa('president@whitehouse.gov'))
 ```
 
-I've included a Hugo shortcode that will do this for you, so you can
-just go:
+### Astro 🚀
+
+There is an Astro component included.
+
+```js
+import ObfuMatic from 'obfumatic/astro';
+```
+
+```html
+<ObfuMatic email="president@whitehouse.gov" text="Click here to email me" />
+```
+
+### Hugo 💪
+
+I've included a Hugo shortcode as well:
 
 ```html
 {{< hideemail addr="president@whitehouse.gov" content="email me" >}}
@@ -83,5 +100,9 @@ If you do both of these things, the `part` rules will win.
 
 ## So 😎
 
-If you think this is cool, but have a better way to get it styled,
-send a PR. If you want more CSS properties exposed, send a PR!
+I assume I'm the only one using this, so it's not on npm or anything.
+You can install it straight from this repository:
+
+```bash
+npm install github:i40west/obfumatic
+```

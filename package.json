@@ -1,6 +1,6 @@
 {
   "name": "obfumatic",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "Email address obfuscation in a Web Component",
   "keywords": ["web-component", "obfuscation", "email", "email-obfuscator"],
   "author": "Jeremy Nixon",

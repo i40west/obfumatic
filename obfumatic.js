@@ -22,20 +22,22 @@ class ObfuMatic extends HTMLElement {
         this._shadowRoot.innerHTML = `
             <style>
             a {
-                color: var(--link-color, inherit);
+                color: var(--link-color, revert);
                 transition: var(--link-hover-transition, none);
-                text-decoration: var(--link-text-decoration, underline);
-                text-decoration-color: var(--link-underline-color, initial);
-                text-decoration-thickness: var(--link-underline-thickness, initial);
+                text-decoration: var(--link-text-decoration, revert);
+                text-decoration-color: var(--link-underline-color, revert);
+                text-decoration-thickness: var(--link-underline-thickness, revert);
+                text-decoration-style: var(--link-underline-style, revert);
             }
             a:hover {
-                color: var(--link-hover-color, inherit);
-                text-decoration: var(--link-hover-text-decoration, var(--link-text-decoration, underline));
-                text-decoration-color: var(--link-underline-hover-color, var(--link-underline-color, initial));
+                color: var(--link-hover-color, revert);
+                text-decoration: var(--link-hover-text-decoration, var(--link-text-decoration, revert));
+                text-decoration-color: var(--link-underline-hover-color, var(--link-underline-color, revert));
+                text-decoration-style: var(--link-underline-hover-style, var(--link-underline-style, revert));
             }
             a::selection {
-                color: var(--selection-a-color, inherit);
-                background-color: var(--selection-bg, inherit);
+                color: var(--selection-a-color, revert);
+                background-color: var(--selection-bg, revert);
             }
             </style>
             <span part="span">${mailToLink}</span>`;

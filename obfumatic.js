@@ -28,12 +28,14 @@ class ObfuMatic extends HTMLElement {
                 text-decoration-color: var(--link-underline-color, revert);
                 text-decoration-thickness: var(--link-underline-thickness, revert);
                 text-decoration-style: var(--link-underline-style, revert);
+                text-underline-offset: var(--link-underline-offset, revert);
             }
             a:hover {
                 color: var(--link-hover-color, revert);
                 text-decoration: var(--link-hover-text-decoration, var(--link-text-decoration, revert));
                 text-decoration-color: var(--link-underline-hover-color, var(--link-underline-color, revert));
                 text-decoration-style: var(--link-underline-hover-style, var(--link-underline-style, revert));
+                text-underline-offset: var(--link-underline-hover-offset, var(--link-underline-offset, revert));
             }
             a::selection {
                 color: var(--selection-a-color, revert);
